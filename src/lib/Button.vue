@@ -83,17 +83,15 @@ $radius: 4px;
       background: darken(white, 5%);
     }
   }
-  &.wind-theme-button {
-    &.wind-size-big {
-      font-size: 24px;
-      height: 48px;
-      padding: 0 16px
-    }
-    &.wind-size-small {
-      font-size: 12px;
-      height: 20px;
-      padding: 0 4px;
-    }
+  &.wind-size-big {
+    font-size: 24px;
+    height: 48px;
+    padding: 0 16px
+  }
+  &.wind-size-small {
+    font-size: 12px;
+    height: 20px;
+    padding: 0 4px;
   }
 }
 </style> 

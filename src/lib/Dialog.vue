@@ -23,6 +23,7 @@
 
 <script lang="ts">
 import Button from "./Button.vue";
+
 export default {
     props: {
         visible: {
@@ -41,7 +42,7 @@ export default {
         }
     },
     components: {
-        Button,
+        Button
     },
     setup(props, context) {
         const close = () => {
@@ -62,21 +63,16 @@ export default {
             close()
         }
         return {
-            close,
-            onClickOverlay,
-            ok,
-            cancel
+            close, onClickOverlay, ok, cancel
         }
     }
-};
+}
 </script>
 
 <style lang="scss">
-$radius: 4px;
-$border-color: #d9d9d9;
 .wind-dialog {
-  background: white;
-  border-radius: $radius;
+  background: #ffffff;
+  border-radius: 4px;
   box-shadow: 0 0 3px fade_out(black, 0.5);
   min-width: 15em;
   max-width: 90%;
@@ -98,7 +94,7 @@ $border-color: #d9d9d9;
   }
   >header {
     padding: 12px 16px;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #d9d9d9;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -108,7 +104,7 @@ $border-color: #d9d9d9;
     padding: 12px 16px;
   }
   >footer {
-    border-top: 1px solid $border-color;
+    border-top: 1px solid #d9d9d9;
     padding: 12px 16px;
     text-align: right;
   }

@@ -1,28 +1,27 @@
 <template>
-<div class="demo">
-  <h2>{{component.__sourceCodeTitle}}</h2>
-  <div class="demo-component">
-    <component :is="component" />
+  <div class="demo">
+    <h2>{{component.__sourceCodeTitle}}</h2>
+    <div class="demo-component">
+      <component :is="component" />
+    </div>
+    <div class="demo-actions">
+      <Button @click="hideCode" v-if="codeVisible">隐藏代码</Button>
+      <Button @click="showCode" v-else>查看代码</Button>
+    </div>
+    <div class="demo-code" v-if="codeVisible">
+      <pre class="language-html" v-html="html" />
+    </div>
   </div>
-  <div class="demo-actions">
-    <Button @click="hideCode" v-if="codeVisible">隐藏代码</Button>
-    <Button @click="showCode" v-else>查看代码</Button>
-  </div>
-  <div class="demo-code" v-if="codeVisible">
-    <pre class="language-html" v-html="html" />
-  </div>
-</div>
 </template>
 
 <script lang="ts">
 import Button from '../lib/Button.vue';
 import 'prismjs';
-import 'prismjs/themes/prism.css';
+//import 'prismjs/themes/prism.css';
+import "prismjs/themes/prism-okaidia.css";
 const Prism = (window as any).Prism
-import {
-  computed,
-  ref
-} from 'vue';
+import { computed, ref } from 'vue';
+
 export default {
   components: {
     Button
@@ -37,12 +36,9 @@ export default {
     const showCode = () => codeVisible.value = true
     const hideCode = () => codeVisible.value = false
     const codeVisible = ref(false)
+    
     return {
-      Prism,
-      html,
-      codeVisible,
-      showCode,
-      hideCode
+      Prism, html, codeVisible, showCode, hideCode
     }
   }
 }

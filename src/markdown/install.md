@@ -12,4 +12,5 @@ npm install wind-ui
 yarn add wind-ui
 ```
 
-下一节：[开始使用](#/doc/get-started)
+上一节：[介绍](#/doc/intro)
+下一节：[开始](#/doc/get-started)

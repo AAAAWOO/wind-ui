@@ -1,21 +1,18 @@
 <demo>
-一键打开 Dialog
+  一键打开
 </demo>
+
 <template>
-<div>
-  <Button @click="showDialog">打开对话框</Button>
-</div>
+  <div>
+    <Button @click="showDialog">打开对话框</Button>
+  </div>
 </template>
 
 <script lang="ts">
-import Button from '../lib/Button.vue'
-import {
-  ref,
-  h
-} from 'vue'
-import {
-  openDialog
-} from '../lib/openDialog'
+import Button from '../lib/Button.vue';
+import { h } from 'vue';
+import { openDialog } from '../lib/openDialog';
+
 export default {
   components: {
     Button

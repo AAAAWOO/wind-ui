@@ -1,7 +1,17 @@
 <template>
-  <h1>Dialog 示例</h1>
+  <h1>Dialog 对话框</h1>
   <Demo :component="Dialog1Demo" />
   <Demo :component="Dialog2Demo" />
+  <div class="link">
+    <span>
+      &lt;
+      <router-link to="/doc/button">Button 按钮</router-link>
+    </span>
+    <span>
+      <router-link to="/doc/tabs">Tabs 标签页</router-link>
+      &gt;
+    </span>
+  </div>  
 </template>
 
 <script lang="ts">
@@ -15,9 +25,16 @@ export default {
   },
   setup() {
     return {
-      Dialog1Demo,
-      Dialog2Demo
+      Dialog1Demo, Dialog2Demo
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.link {
+  display: flex;
+  justify-content: space-between;
+  color: #2269E7;
+}
+</style>

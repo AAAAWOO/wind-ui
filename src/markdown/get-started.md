@@ -1,13 +1,12 @@
-# 开始使用
-请先[安装](#/doc/install)本组件库。
+# 开始
 
-然后在你的代码中写入下面的代码
+请先[安装](#/doc/install)该组件库，然后在你的代码中引入：
 
 ```
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wind-ui"
+import { Switch, Button, Dialog, Tabs } from "wind-ui"
 ```
 
-就可以使用我提供的组件了。
+就可以正常使用了。
 
 ## Vue 单文件组件
 
@@ -19,10 +18,17 @@ import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wind-ui"
     <Button>按钮</Button>
   </div>
 </template>
+
 <script>
-import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wind-ui"
+import { Switch, Button, Dialog, Tabs } from "wind-ui"
+
 export default {
-  components: {Button}
+  components: {
+    Button
+  }
 }
 </script>
 ```
+
+上一节：[安装](#/doc/install)
+下一节：[Switch 开关](#/doc/switch)

@@ -11,7 +11,7 @@
       <router-link to="/doc/tabs">Tabs 标签页</router-link>
       &gt;
     </span>
-  </div>  
+  </div>
 </template>
 
 <script lang="ts">
@@ -24,7 +24,7 @@ export default {
     Demo
   },
   setup() {
-    return {
+    return { 
       Dialog1Demo, Dialog2Demo
     }
   }

@@ -2,7 +2,7 @@
   <div class="layout">
     <Topnav toggleMenuButtonVisible class="nav" />
     <div class="content">
-      <SideMenu /> 
+      <SideMenu />  
       <main>
         <router-view />
       </main>
@@ -47,7 +47,7 @@ export default {
     flex-grow: 1;
     padding: 16px;
     background: #ffffff;
-  }  
+  }
 }
 main {
   overflow: auto;

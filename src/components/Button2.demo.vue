@@ -1,7 +1,6 @@
 <demo>
   size 属性
 </demo>
-
 <template>
   <div>
     <div>

@@ -108,7 +108,7 @@ $white: #ffffff;
     height: 20px;
     padding: 0 4px;
   }
-  &.wind-theme-button {
+    &.wind-theme-button {
     &.wind-level-main {
       background: $blue;
       color: $white;
@@ -170,10 +170,10 @@ $white: #ffffff;
       color: $grey;
     }
   }
-  > .wind-loadingIndicator {
+  > .wind-loadingIndicator{
     display: inline-block;
     width: 10px;
-    height: 10px;    
+    height: 10px;
     margin-right: 4px;
     border-color: $blue $blue $blue transparent;
     border-style: solid;

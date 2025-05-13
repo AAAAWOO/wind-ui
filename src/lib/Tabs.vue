@@ -46,7 +46,7 @@ export default {
     const current = computed(() => {
       return defaults.find(tag => tag.props.title === props.selected)
     })
-     
+    
     const titles = defaults.map((tag) => {
       return tag.props.title
     })
@@ -54,7 +54,7 @@ export default {
     const select = (title: string) => {
       context.emit('update:selected', title)
     }
-    
+
     return {
       current, defaults, titles, select, selectedItem, indicator, container
     }

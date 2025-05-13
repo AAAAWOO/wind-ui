@@ -1,7 +1,6 @@
 <demo>
   theme 属性
 </demo>
-
 <template>
   <div>
     <Button>按钮</Button>

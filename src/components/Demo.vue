@@ -36,7 +36,7 @@ export default {
     const showCode = () => codeVisible.value = true
     const hideCode = () => codeVisible.value = false
     const codeVisible = ref(false)
-    
+
     return {
       Prism, html, codeVisible, showCode, hideCode
     }

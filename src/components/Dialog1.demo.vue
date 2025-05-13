@@ -1,7 +1,6 @@
 <demo>
   默认
 </demo>
-
 <template>
   <div>
     <Button @click="toggle">打开对话框</Button>

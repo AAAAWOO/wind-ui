@@ -33,11 +33,11 @@ $h2: $h - 4px;
   > span {
     position: absolute; 
     top: 2px; 
-    left: 2px;
+    left: 2px; 
     height: $h2;   
     width: $h2;    
     background: #ffffff;     
-    border-radius: $h2 / 2; 
+    border-radius: $h2 / 2;   
     transition: all 250ms;
   }
   &.wind-checked { 
@@ -51,7 +51,7 @@ $h2: $h - 4px;
   }
   &:active {
     > span { 
-      width: $h2 + 4px;    
+      width: $h2 + 4px; 
     }
   }
   &.wind-checked:active {
@@ -61,4 +61,4 @@ $h2: $h - 4px;
     }
   }
 }
-</style>    
+</style>

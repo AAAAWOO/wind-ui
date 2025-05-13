@@ -43,7 +43,6 @@ export default {
       default: false
     }
   },
-
   setup() {
     const menuVisible = inject < Ref < boolean >> ("menuVisible")           // get
     const toggleMenu = () => {
@@ -68,7 +67,7 @@ $blue: #2269E7;
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: saturate(50%) blur(8px);
   border-bottom: 1px solid #d9d9d9;
-  > .topnav-container { 
+  > .topnav-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +91,7 @@ $blue: #2269E7;
         color: #44475b;
         position: relative;
         vertical-align: middle;
-      }    
+      }
     }
     > .navLinks {
       display: flex;
@@ -125,7 +124,7 @@ $blue: #2269E7;
       position: absolute;
       left: 16px;
       top: 50%;
-      transform: translateY(-50%);  
+      transform: translateY(-50%);
       display: none;
     }
     @media (max-width: 500px) {

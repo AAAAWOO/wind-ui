@@ -15,25 +15,25 @@ import install from './markdown/install.md'
 const history = createWebHashHistory();
 const md = string => h(Markdown, { content: string, key: string })
 export const router = createRouter({
-    history: history,
-    routes: [
-        { path: "/", component: Home },
-        {
-            path: "/doc",
-            component: Doc,
-            children: [
-                { path: "", redirect: '/doc/intro' },
-                { path: "intro", component: md(intro) },
-                { path: "get-started", component: md(getStarted) },
-                { path: "install", component: md(install) },
-                { path: "switch", component: SwitchDemo },
-                { path: "button", component: ButtonDemo },
-                { path: "dialog", component: DialogDemo },
-                { path: "tabs", component: TabsDemo },
-            ],
-        },
-    ],
+  history: history,
+  routes: [
+    { path: "/", component: Home },
+    {
+      path: "/doc",
+      component: Doc,
+      children: [
+        { path: "", redirect: '/doc/intro' },
+        { path: "intro", component: md(intro) },
+        { path: "get-started", component: md(getStarted) },
+        { path: "install", component: md(install) },
+        { path: "switch", component: SwitchDemo },
+        { path: "button", component: ButtonDemo },
+        { path: "dialog", component: DialogDemo },
+        { path: "tabs", component: TabsDemo },
+      ],
+    },
+  ],
 });
 router.afterEach(() => {
-    console.log("路由切换了");
+  console.log("路由切换了");
 }); 

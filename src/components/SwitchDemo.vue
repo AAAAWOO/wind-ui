@@ -17,13 +17,13 @@ import Switch2Demo from './Switch2.demo.vue';
 
 export default {
   components: {
-    Demo   
+    Demo    
   },
   setup() {
     return {
       Switch1Demo, Switch2Demo
     }
-  }  
+  } 
 }
 </script>
 

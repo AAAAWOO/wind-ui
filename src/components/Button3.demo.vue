@@ -1,7 +1,6 @@
 <demo>
   level 属性
 </demo>
-
 <template>
   <div>
     <div>

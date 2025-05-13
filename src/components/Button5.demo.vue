@@ -1,7 +1,6 @@
 <demo>
   loading 属性
 </demo>
-
 <template>
   <div>
     <Button loading>加载中</Button>

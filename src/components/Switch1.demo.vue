@@ -1,7 +1,6 @@
 <demo>
   默认样式
 </demo>
-
 <template>
   <Switch v-model:value="bool" />
 </template>

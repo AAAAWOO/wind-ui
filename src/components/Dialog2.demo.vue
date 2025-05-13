@@ -1,7 +1,6 @@
 <demo>
   一键打开
 </demo>
-
 <template>
   <div>
     <Button @click="showDialog">打开对话框</Button>

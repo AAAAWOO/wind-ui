@@ -1,7 +1,6 @@
 <demo>
   禁用样式
 </demo>
-
 <template>
   <Switch v-model:value="bool" disabled />
 </template>

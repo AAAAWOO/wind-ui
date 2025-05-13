@@ -6,7 +6,7 @@
       &lt;
       <router-link to="/doc/dialog">Dialog 对话框</router-link>
     </span>
-  </div>  
+  </div>
 </template>
 
 <script lang="ts">
